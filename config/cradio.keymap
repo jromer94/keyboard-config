@@ -21,7 +21,7 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
-        tdt: tap_dance_shift {
+        tds: tap_dance_shift {
             td_mt: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_SHIFT";
