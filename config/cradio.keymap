@@ -26,10 +26,10 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
-        td_shift: tap_dance_shift {
+        tdt: tap_dance_shift {
             td_mt: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MOD_TAP";
+            label = "TAP_DANCE_SHIFT";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&sk LSHIFT>, <&caps_word>;
@@ -58,7 +58,7 @@
         //│  Z       │  X       │  C       │  D       │  V       │   │  K       │  H       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt 2 TAB   &td_shift     &kp SPACE  &lt 1 BSPC
+                                            &lt 2 TAB   &tds          &kp SPACE  &lt 1 BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
